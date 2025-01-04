@@ -20,13 +20,13 @@ A Python script to perform health checks on HTTP endpoints defined in a YAML fil
   - requests: For making HTTP requests.
 
 Install the required libraries using:
-```console
+```shell
 pip install requests pyyaml
 ```
 
 or 
 
-```console
+```properties
 pip install -r requirements.txt
 ```
 
