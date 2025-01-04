@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 Run the program using the following command:
 
-```console
+```bash
 python healthCheck.py -f <path_to_yaml_file> [-t <threads>] [-cy <cycle_length>] [-c <colorize_output>] [-v <verbose>] 
 ```
 
