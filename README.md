@@ -21,13 +21,13 @@ A Python script to perform health checks on HTTP endpoints defined in a YAML fil
 
 Install the required libraries using:
 ```console
-foo@bar:~$ pip install requests pyyaml
+pip install requests pyyaml
 ```
 
 or 
 
 ```console
-foo@bar:~$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 
@@ -36,7 +36,7 @@ foo@bar:~$ pip install -r requirements.txt
 Run the program using the following command:
 
 ```console
-foo@bar:~$ python healthCheck.py -f <path_to_yaml_file> [-t <threads>] [-cy <cycle_length>] [-c <colorize_output>] [-v <verbose>] 
+python healthCheck.py -f <path_to_yaml_file> [-t <threads>] [-cy <cycle_length>] [-c <colorize_output>] [-v <verbose>] 
 ```
 
 Arguments:
@@ -53,7 +53,7 @@ The program can be safely stopped using Ctrl + C.
 ## Example
 
 ```console
-foo@bar:~$ python healthCheck.py -f endpoints.yaml -cy 15 -c true -v true -t 5
+python healthCheck.py -f endpoints.yaml -cy 15 -c true -v true -t 5
 ```
 
 - endpoints.yaml: A YAML file containing endpoint definitions.
