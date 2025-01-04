@@ -1,0 +1,51 @@
+- headers:
+    user-agent: test-synthetic-monitor
+  method: GET
+  name: check Google homepage
+  url: https://www.google.com/
+- headers:
+    user-agent: test-synthetic-monitor
+  method: GET
+  name: check BBC news homepage
+  url: https://www.bbc.com/news
+- body: '{"email":"test@example.com","password":"12345"}'
+  headers:
+    content-type: application/json
+    user-agent: test-synthetic-monitor
+  method: POST
+  name: test login API on fake endpoint
+  url: https://fakeapi.example/login
+- headers:
+    user-agent: test-synthetic-monitor
+  method: GET
+  name: check Twitter homepage
+  url: https://twitter.com/
+- body: '{"query":"breaking news"}'
+  headers:
+    content-type: application/json
+    user-agent: test-synthetic-monitor
+  method: POST
+  name: search endpoint on fake API
+  url: https://fakeapi.example/search
+- headers:
+    user-agent: test-synthetic-monitor
+  method: GET
+  name: check Reddit homepage
+  url: https://www.reddit.com/
+- body: '{"action":"subscribe","email":"test@fake.com"}'
+  headers:
+    content-type: application/json
+    user-agent: test-synthetic-monitor
+  method: POST
+  name: subscribe endpoint on fake website
+  url: https://example-fake-website.com/api/subscribe
+- headers:
+    user-agent: test-synthetic-monitor
+  method: GET
+  name: check Amazon homepage
+  url: https://www.amazon.com/
+- headers:
+    user-agent: test-synthetic-monitor
+  method: GET
+  name: check a fake blog homepage
+  url: https://fakeblog.example/
