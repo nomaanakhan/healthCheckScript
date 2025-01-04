@@ -24,9 +24,9 @@ Install the required libraries using:
 pip install requests pyyaml
 ```
 
-or 
+OR 
 
-```properties
+```shell
 pip install -r requirements.txt
 ```
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 Run the program using the following command:
 
-```bash
+```shell
 python healthCheck.py -f <path_to_yaml_file> [-t <threads>] [-cy <cycle_length>] [-c <colorize_output>] [-v <verbose>] 
 ```
 
