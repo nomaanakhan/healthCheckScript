@@ -52,7 +52,7 @@ The program can be safely stopped using Ctrl + C.
 
 ## Example
 
-```console
+```shell
 python healthCheck.py -f endpoints.yaml -cy 15 -c true -v true -t 5
 ```
 
