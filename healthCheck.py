@@ -114,12 +114,12 @@ def checkEndPoint(endpoint, results, lock, colorize, verbose):
         reqStartTime = time.time()
         # Perform HTTP request
         if body:
-            response = requests.request(method, url, headers=headers, data=body)
+            response = requests.request(method, url, headers=headers, data=body, timeout=0.5)
         else:
-            response = requests.request(method, url, headers=headers)
+            response = requests.request(method, url, headers=headers, timeout=0.5)
         # Calculate latency
         latency = (time.time() - reqStartTime) * 1000
-        roundedLatency = round(latency)
+        roundedLatency = round(latency) # Round it for logging
 
         # Check response status and latency
         if 200 <= response.status_code < 300 and latency < 500:
